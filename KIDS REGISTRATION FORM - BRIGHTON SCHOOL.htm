@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)file:///C:/Users/user/OneDrive/Desktop/vision/vision.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>KIDS REGISTRATION FORM - BRIGHTON SCHOOL</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("https://static.vecteezy.com/system/resources/thumbnails/002/199/171/small/safari-scene-with-wild-animals-in-the-jeep-car-free-vector.jpg");
+            background-size: cover;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.7); /* Transparent white background */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        
+
+        .header {
+            text-align: center;
+            color: black;
+            margin-top: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <h2 class="header">GRADE 1 TRIP REGISTRATION FORM - BRIGHTON SCHOOL</h2>
+        <h2 class="header">
+            <span class="school-name"></span><br>
+            <span class="info-text">PLEASE FILL OUT THE REGISTRATION FORM BELOW TO SECURE YOUR CHILD'S SPOT.</span>
+        </h2>
+        <form action="file:///C:/Users/user/OneDrive/Desktop/vision/submit_registration.php" method="POST">
+            
+            <!-- Parent/Guardian Information -->
+            <h3>Parent/Guardian Information</h3>
+            <div class="form-group">
+                <label for="parent_name">Parent's Name:</label>
+                <input type="text" id="parent_name" name="parent_name" required="">
+            </div>
+            <div class="form-group">
+                <label for="parent_contact">Contact Number:</label>
+                <input type="text" id="parent_contact" name="parent_contact" required="">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required="">
+            </div>
+            <div class="form-group">
+                <label for="home_address">Home Address:</label>
+                <input type="text" id="home_address" name="home_address" required="">
+            </div>
+            
+            <!-- Child Information -->
+            <h3>Child Information</h3>
+            <div class="form-group">
+                <label for="child_name">Child's Name:</label>
+                <input type="text" id="child_name" name="child_name" required="">
+            </div>
+            <div class="form-group">
+                <label for="child_dob">Date of Birth:</label>
+                <input type="date" id="child_dob" name="child_dob" required="">
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required="">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="child_allergies">Any allergies or medical conditions:</label>
+                <textarea id="child_allergies" name="child_allergies"></textarea>
+            </div>
+            
+            <!-- Emergency Contact -->
+            <h3>Emergency Contact</h3>
+            <div class="form-group">
+                <label for="emergency_contact_name">Emergency Contact Name:</label>
+                <input type="text" id="emergency_contact_name" name="emergency_contact_name" required="">
+            </div>
+            <div class="form-group">
+                <label for="emergency_contact_phone">Emergency Contact Phone Number:</label>
+                <input type="text" id="emergency_contact_phone" name="emergency_contact_phone" required="">
+            </div>
+            <div class="form-group">
+                <label for="emergency_contact_relationship">Relationship to Child:</label>
+                <input type="text" id="emergency_contact_relationship" name="emergency_contact_relationship" required="">
+            </div>
+            
+            <!-- Permissions and Consent -->
+            <h3>Permissions and Consent</h3>
+            <div class="form-group">
+                <label>Parental Consent:</label>
+                <input type="checkbox" id="parental_consent" name="parental_consent">
+            </div>
+            <div class="form-group">
+                <label>Photography Consent:</label>
+                <input type="checkbox" id="photography_consent" name="photography_consent">
+            </div>
+            <div class="form-group">
+                <label>Other Permissions (Specify):</label>
+                <textarea id="other_permissions" name="other_permissions"></textarea>
+            </div>
+            
+            <!-- Additional Comments -->
+            <div class="form-group">
+                <label for="additional_comments">Additional Comments or Notes:</label>
+                <textarea id="additional_comments" name="additional_comments"></textarea>
+            </div>
+            
+            <!-- Note -->
+            <p><strong>Note:</strong> <b>Please complete this form and return it to the school office by [22/10/2023]. Ensure all sections are completed accurately. If you have any questions, please contact the school office at [0723089639] or [info@gmail.com].</b></p>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body></html>
